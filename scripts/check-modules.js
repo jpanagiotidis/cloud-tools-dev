@@ -9,8 +9,6 @@ const OK_MSG = 'EVERYTHING IS OK.'
 
 function outdated() {
   return new Promise((resolve, reject) => {
-    console.log('pwd', shell.exec('pwd').stdout);
-    console.log('__dirname', __dirname);
     const npmOut = shell.exec('npm outdated --json=true --parseable=true --long=true');
 
     if (npmOut.stderr !== '') {
@@ -31,7 +29,7 @@ function outdated() {
 
 function vulnurable() {
   return new Promise((resolve, reject) => {
-    const npmOut = shell.exec('npm run security');
+    const npmOut = shell.exec('nsp check --output json --warn-only');
 
     if (npmOut.stderr !== '') {
       reject(npmOut.stderr);
