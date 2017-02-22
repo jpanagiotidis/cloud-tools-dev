@@ -1,6 +1,5 @@
 'use strict';
 
-const npm = require('npm');
 const _ = require('lodash');
 const shell = require('shelljs');
 
