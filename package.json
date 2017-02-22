@@ -1,0 +1,20 @@
+{
+  "name": "cloud-tools-dev",
+  "version": "0.0.1",
+  "description": "Development Cloud Tools for NodeJS",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.4.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/jpanagiotidis/cloud-tools-dev"
+  },
+  "dependencies": {
+    "lodash": "4.17.4",
+    "nsp": "2.6.2",
+    "shelljs": "0.7.6"
+  }
+}
